@@ -7,7 +7,7 @@ A complete full-stack application template using React, Tanstack Query, FastAPI,
 ![React](https://img.shields.io/badge/React-18.2.0-61DAFB?style=for-the-badge&logo=react&logoColor=white)
 ![Tanstack Query](https://img.shields.io/badge/Tanstack_Query-5.17.19-FF4154?style=for-the-badge&logo=react-query&logoColor=white)
 ![Vite](https://img.shields.io/badge/Vite-5.0.11-646CFF?style=for-the-badge&logo=vite&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+![FastAPI](https://img.shields.io/badge/FastAPI-0.109.1-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 ![PostgreSQL](https://img.shields.io/badge/PostgreSQL-15-336791?style=for-the-badge&logo=postgresql&logoColor=white)
 ![Docker](https://img.shields.io/badge/Docker-Compose-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 

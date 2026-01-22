@@ -97,7 +97,7 @@ Axios is a promise-based HTTP client for the browser and Node.js with automatic 
 
 ## 🐍 Backend Stack
 
-### ![FastAPI](https://img.shields.io/badge/FastAPI-0.109.0-009688?style=for-the-badge&logo=fastapi&logoColor=white)
+### ![FastAPI](https://img.shields.io/badge/FastAPI-0.109.1-009688?style=for-the-badge&logo=fastapi&logoColor=white)
 **Purpose:** Modern Python web framework
 
 FastAPI is a modern, high-performance web framework for building APIs with Python 3.9+ based on standard Python type hints.
@@ -114,6 +114,8 @@ FastAPI is a modern, high-performance web framework for building APIs with Pytho
 - Automatic API documentation
 - Request/response validation
 - Dependency injection
+
+**Security Note:** Using version 0.109.1 which patches the Content-Type Header ReDoS vulnerability.
 
 **Files:**
 - `backend/app/main.py` - FastAPI application
@@ -339,10 +341,14 @@ Validates email addresses using proper RFC standards.
 
 ---
 
-### ![python-multipart](https://img.shields.io/badge/python--multipart-0.0.6-blue?style=for-the-badge)
+### ![python-multipart](https://img.shields.io/badge/python--multipart-0.0.18-blue?style=for-the-badge)
 **Purpose:** Multipart form data parsing
 
 Handles file uploads and form data in FastAPI.
+
+**Security Note:** Using version 0.0.18 which patches multiple vulnerabilities:
+- DoS via malformed multipart/form-data boundary
+- Content-Type Header ReDoS vulnerability
 
 **In This Project:**
 - Processing file uploads
@@ -377,7 +383,7 @@ Handles file uploads and form data in FastAPI.
 
 ### Backend Dependencies
 ```
-fastapi==0.109.0
+fastapi==0.109.1
 uvicorn[standard]==0.27.0
 sqlalchemy==2.0.25
 psycopg2-binary==2.9.9
@@ -385,7 +391,7 @@ pydantic==2.5.3
 pydantic-settings==2.1.0
 alembic==1.13.1
 python-dotenv==1.0.0
-python-multipart==0.0.6
+python-multipart==0.0.18
 email-validator==2.1.1
 ```
 
@@ -486,7 +492,7 @@ email-validator==2.1.1
 | React | 18.2.0 | June 2022 |
 | Tanstack Query | 5.17.19 | Jan 2024 |
 | Vite | 5.0.11 | Jan 2024 |
-| FastAPI | 0.109.0 | Jan 2024 |
+| FastAPI | 0.109.1 | Jan 2024 |
 | SQLAlchemy | 2.0.25 | Jan 2024 |
 | PostgreSQL | 15 | Oct 2022 |
 | Python | 3.9+ | Oct 2020 |
